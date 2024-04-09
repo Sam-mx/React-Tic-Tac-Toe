@@ -1,22 +1,18 @@
-
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import Button from "./components/Button";
 
 function App() {
+
+  const resetGame = () => {
+    setSquares(Array(9).fill(""));
+    setTurn("x");
+    setWinner(null);
+};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tic-tac-toe">
+      <h1> TIC-TAC-TOE </h1>
+      <Button resetGame={resetGame} />
     </div>
   );
 }
