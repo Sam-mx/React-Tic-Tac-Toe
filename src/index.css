@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  font-family: consolas;
+}
+
+.tic-tac-toe {
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+}
+.tic-tac-toe h1 {
+  color: #eee;
+}
+
+.tic-tac-toe button {
+  padding: 8px 12px;
+  margin: 25px;
+  background: transparent;
+  border: 2px solid #eee;
+  color: #eee;
+  width: 100px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tic-tac-toe button:hover {
+  background: #eee;
+  color: #222;
+}
